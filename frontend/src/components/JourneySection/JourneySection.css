@@ -1,0 +1,134 @@
+﻿
+/* =========================================
+   Journey Section Styles
+   ========================================= */
+.journey-wrapper {
+  background: white;
+  padding: 60px 10px;
+  overflow: hidden;
+}
+
+.journey-header h2 {
+  text-align: center;
+  color: #003B6F;
+  font-size: 1.6rem; /* Reduced from 2.2rem */
+  margin-bottom: 30px; /* Slightly reduced margin */
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  white-space: nowrap; /* Keep on one line as requested */
+}
+
+@media (max-width: 768px) {
+  .journey-wrapper {
+    padding: 10px 10px 5px !important; /* Extremely reduced padding */
+  }
+  .journey-header h2 {
+    font-size: 0.6rem; /* Even smaller for mobile as requested */
+  }
+}
+
+.journey-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  aspect-ratio: 3 / 4; /* Mobile optimized vertical space */
+}
+
+@media (min-width: 769px) {
+  .journey-container {
+    aspect-ratio: 4 / 3;
+    max-width: 800px;
+  }
+}
+
+.journey-svg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.map-india, .map-japan {
+  position: absolute;
+  width: 25%;
+  mix-blend-mode: multiply; /* Fixes white generated background */
+  z-index: 0;
+  opacity: 0.9;
+}
+
+.map-india {
+  bottom: 0%;
+  left: -2%;
+}
+
+.map-japan {
+  top: 0%;
+  right: -2%;
+}
+
+.journey-marker {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #003B6F;
+  background: white;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.step-text-container {
+  position: absolute;
+  width: 140px; /* Force line breaks */
+  opacity: 0; /* Hidden initially */
+}
+
+.fade-in-on-pass {
+  animation: stepFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes stepFadeIn {
+  from { 
+    opacity: 0; 
+    filter: blur(5px);
+  }
+  to { 
+    opacity: 1; 
+    filter: blur(0);
+  }
+}
+.text-pos-top.fade-in-on-pass { transform-origin: bottom center; }
+.text-pos-left.fade-in-on-pass { transform-origin: center right; }
+.text-pos-right.fade-in-on-pass { transform-origin: center left; }
+
+
+
+.text-pos-bottom {
+  top: 20px; left: 50%; transform: translateX(-50%); text-align: center;
+}
+.text-pos-top {
+  bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center;
+}
+.text-pos-left {
+  right: 20px; top: 50%; transform: translateY(-50%); text-align: right;
+}
+.text-pos-right {
+  left: 20px; top: 50%; transform: translateY(-50%); text-align: left;
+}
+
+.step-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.step-sub {
+  font-size: 0.6rem;
+  color: #ff5e5e; 
+  line-height: 1.2;
+}
+
