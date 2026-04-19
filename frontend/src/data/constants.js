@@ -218,7 +218,7 @@ export const journeySteps = [
   { title: 'Receive Admission',    sub: 'Get official offer letter',           color: 'green', align: 'text-pos-left',   t: 0.58 },
   { title: 'Connect with Students',sub: 'Interact with current students',      color: 'blue',  align: 'text-pos-right',  t: 0.70 },
   { title: 'Visa & COE Support',   sub: 'Complete your visa process',         color: 'blue',  align: 'text-pos-left',   t: 0.82 },
-  { title: 'Fly to Japan',         sub: 'Begin journey with confidence',        color: 'green', align: 'text-pos-bottom', t: 0.95 },
+  { title: 'Fly to Japan',         sub: 'Begin journey with confidence',        color: 'green', align: 'text-pos-top', t: 0.95 },
 ];
 
 // ─── FAQs ─────────────────────────────────────────────────────────────────────
