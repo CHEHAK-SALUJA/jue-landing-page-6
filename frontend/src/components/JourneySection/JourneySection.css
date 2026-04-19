@@ -1,4 +1,4 @@
-﻿
+
 /* =========================================
    Journey Section Styles
    ========================================= */
@@ -83,8 +83,10 @@
 
 .step-text-container {
   position: absolute;
-  width: 140px; /* Force line breaks */
+  width: 100px; /* Force line breaks, reduced from 140px to prevent overlap */
   opacity: 0; /* Hidden initially */
+  font-family: 'Inter', sans-serif;
+  z-index: 10;
 }
 
 .fade-in-on-pass {
@@ -121,13 +123,13 @@
 }
 
 .step-title {
-  font-size: 0.8rem;
-  font-weight: 800;
+  font-size: 0.65rem;
+  font-weight: 700;
   margin-bottom: 2px;
 }
 
 .step-sub {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   color: #ff5e5e; 
   line-height: 1.2;
 }
