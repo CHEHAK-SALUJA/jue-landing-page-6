@@ -1,4 +1,4 @@
-﻿/* Feature Slider */
+/* Feature Slider */
 .feature-slider {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -124,10 +124,10 @@
 }
 
 .feature-list li::before {
-  content: 'âœ“';
+  content: '•';
   color: #DAA520;
   margin-right: 10px;
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .feature-slider-dots {
