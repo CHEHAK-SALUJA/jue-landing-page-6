@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ChatWidget.css';
 
 const ChatWidget = () => {
@@ -54,7 +54,7 @@ const ChatWidget = () => {
         className={`chat-fab ${isOpen ? 'active' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? 'âœ•' : 'ðŸ’¬'}
+        {isOpen ? '✕' : '💬'}
       </button>
 
       {/* Chat Window */}
