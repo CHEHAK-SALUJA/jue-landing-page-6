@@ -24,19 +24,19 @@ const defaultNews = [
   },
   { 
     img: news3, 
-    title: 'JUEâ€™s My Campus Site Earns Studio Design Award 2025 Nomination',
+    title: 'JUE\'s My Campus Site Earns Studio Design Award 2025 Nomination',
     text: 'Recognized for outstanding design and user experience. Invites global audience support through public voting.',
     url: 'https://mycampus.jue.ac.jp/news'
   },
   { 
     img: news4, 
     title: 'JUE Leads the Way in Global Education & Career Success',
-    text: '97% placement rate for international graduates with Japanese language & cultural training. Bridging cultures while preparing students for Japanâ€™s workforce.',
+    text: '97% placement rate for international graduates with Japanese language & cultural training. Bridging cultures while preparing students for Japan\'s workforce.',
     url: 'https://www.theworldfolio.com/interviews/japan-university-of-economics-nurturing-global-talent-and-bridging-cultures/6758/'
   },
   { 
     img: news5, 
-    title: 'Japan University of Economics Wins 2026 Prime Ministerâ€™s Commendation',
+    title: 'Japan University of Economics Wins 2026 Prime Minister\'s Commendation',
     text: 'Awarded for leadership in environmental conservation and green initiatives. Recognized nationally for sustainability and community impact.',
     url: 'https://www.jue.ac.jp/information/green-award2026/'
   },
@@ -204,7 +204,7 @@ export default function NewsCarousel({ title = 'News & Press Release', items = d
          </div>
       </div>
 
-      {/* Desktop Snap Track â€” Visible only on Desktop via CSS */}
+      {/* Desktop Snap Track — Visible only on Desktop via CSS */}
       <div
         ref={trackRef}
         className="news-snap-track desktop-only"
