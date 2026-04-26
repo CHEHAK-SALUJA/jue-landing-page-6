@@ -2,12 +2,12 @@ import { useRef, useEffect, useState } from 'react';
 import { getOptimizedUrl } from '../../utils/cloudinary';
 import './NewsCarousel.css';
 
-const news1 = getOptimizedUrl("jue_site/news_1");
-const news2 = getOptimizedUrl("jue_site/news_2");
-const news3 = getOptimizedUrl("jue_site/news_3");
-const news4 = getOptimizedUrl("jue_site/news_4");
-const news5 = getOptimizedUrl("jue_site/news5");
-const news6 = getOptimizedUrl("jue_site/news_6");
+const news1 = getOptimizedUrl("jue_news_fresh_1");
+const news2 = getOptimizedUrl("jue_news_fresh_2");
+const news3 = getOptimizedUrl("jue_news_fresh_3");
+const news4 = getOptimizedUrl("jue_news_fresh_4");
+const news5 = getOptimizedUrl("jue_news_fresh_5");
+const news6 = getOptimizedUrl("jue_news_fresh_6");
 
 const defaultNews = [
   { 

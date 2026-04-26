@@ -20,5 +20,5 @@ export const getOptimizedUrl = (publicId, transformations = "q_auto,f_auto,w_800
     return publicId;
   }
 
-  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${transformations}/v1/${publicId}`;
+  return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/${transformations}/${publicId}`;
 };
