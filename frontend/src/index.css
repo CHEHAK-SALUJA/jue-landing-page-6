@@ -1158,6 +1158,10 @@ h3 {
     width: 80%;
     height: 80%;
   }
+  .social-icon.linkedin img {
+    width: 60%; /* Specifically smaller for LinkedIn */
+    height: 60%;
+  }
 }
 
 .footer-bottom {
@@ -1716,6 +1720,11 @@ h3 {
   box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
 }
 
+.explore-campus-btn.blink-btn {
+  animation: buttonBlinkWhite 1.5s infinite alternate;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
 @keyframes buttonBlink {
   0% {
     transform: scale(1);
@@ -1726,6 +1735,19 @@ h3 {
     transform: scale(1.05);
     filter: brightness(1.2);
     box-shadow: 0 0 20px rgba(52, 152, 219, 0.6);
+  }
+}
+
+@keyframes buttonBlinkWhite {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
   }
 }
 
