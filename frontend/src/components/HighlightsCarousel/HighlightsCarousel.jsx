@@ -128,6 +128,24 @@ export default function HighlightsCarousel({ title = 'Highlights', items = defau
     }
   };
 
+  const mouseStartX = useRef(null);
+
+  const onMouseDown = (e) => {
+    mouseStartX.current = e.clientX;
+  };
+
+  const onMouseUp = (e) => {
+    if (mouseStartX.current === null) return;
+    const diff = mouseStartX.current - e.clientX;
+    mouseStartX.current = null;
+    if (Math.abs(diff) < 30) return;
+
+    const track = trackRef.current;
+    if (!track) return;
+    const cardWidth = track.offsetWidth / 3;
+    track.scrollBy({ left: diff > 0 ? cardWidth : -cardWidth, behavior: 'smooth' });
+  };
+
   return (
     <div className="news-carousel-wrapper">
       <h2 className="news-title">{title}</h2>
@@ -168,12 +186,14 @@ export default function HighlightsCarousel({ title = 'Highlights', items = defau
          </div>
       </div>
 
-      {/* Desktop Snap Track â€” Hidden on Mobile */}
+      {/* Desktop Snap Track — Hidden on Mobile */}
       <div
         ref={trackRef}
         className="news-snap-track desktop-only"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
+        onMouseDown={onMouseDown}
+        onMouseUp={onMouseUp}
         onScroll={handleScroll}
       >
         {infiniteItems.map((item, i) => (
@@ -191,5 +211,3 @@ export default function HighlightsCarousel({ title = 'Highlights', items = defau
     </div>
   );
 }
-
-

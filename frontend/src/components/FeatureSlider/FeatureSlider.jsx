@@ -38,6 +38,20 @@ export default function FeatureSlider() {
     if (touchStart.current - touchEnd.current < -70) slidePrev();
   };
 
+  const mouseStartX = useRef(null);
+
+  const onMouseDown = (e) => {
+    mouseStartX.current = e.clientX;
+  };
+
+  const onMouseUp = (e) => {
+    if (mouseStartX.current === null) return;
+    const diff = mouseStartX.current - e.clientX;
+    mouseStartX.current = null;
+    if (diff > 70) slideNext();
+    if (diff < -70) slidePrev();
+  };
+
   const slide = featureSlides[currentIndex];
   const animClass = animState === 'exit' ? 'slide-exit' : animState === 'enter' ? 'slide-enter' : 'slide-idle';
 
@@ -47,6 +61,8 @@ export default function FeatureSlider() {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
+      onMouseDown={onMouseDown}
+      onMouseUp={onMouseUp}
     >
       <div className={`feature-slider-box ${animClass}`}>
         <div className="feature-slider-text">
@@ -64,11 +80,12 @@ export default function FeatureSlider() {
           </div>
         </div>
         <div className="feature-slider-image">
-          <img src={slide.image} alt={slide.title} />
+          <img src={slide.image} alt={slide.title} draggable="false" />
         </div>
       </div>
     </div>
   );
 }
+
 
 
