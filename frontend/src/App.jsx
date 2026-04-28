@@ -534,6 +534,18 @@ const App = () => {
       {/* ── Journey ── */}
       <JourneySection />
 
+      {/* ── Connect with JUE ── */}
+      <section className="whatsapp-cta-section reveal" id="connect-with-jue" style={{ backgroundColor: '#003B6F' }}>
+        <div className="whatsapp-cta-banner">
+          <div className="whatsapp-cta-text" style={{ whiteSpace: 'normal', lineHeight: '1.4', color: '#FFFFFF', marginBottom: '15px' }}>
+            Hurrry up! Connect with Japanese students, discover life in Japan and JUE, and create lifelong friendships while building strong communication skills
+          </div>
+          <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="whatsapp-join-btn blink-btn" style={{ color: '#FFFFFF', borderColor: '#FFFFFF', marginBottom: '15px' }}>
+            Click to connect now
+          </a>
+        </div>
+      </section>
+
       {/* ── Special Support for Indian Students ── */}
       <section className="special-support-section2 reveal" id="special-support2">
         <div className="special-support-header2">
