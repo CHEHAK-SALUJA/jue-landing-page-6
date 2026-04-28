@@ -539,7 +539,10 @@ const App = () => {
           <div className="whatsapp-cta-text" style={{ whiteSpace: 'normal', lineHeight: '1.4', color: '#FFFFFF', marginBottom: '15px' }}>
             Hurrry up! Connect with Japanese students, discover life in Japan and JUE, and create lifelong friendships while building strong communication skills
           </div>
-          <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="whatsapp-join-btn blink-btn" style={{ color: '#FFFFFF', borderColor: '#FFFFFF', marginBottom: '15px' }}>
+          <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '15px' }}>
+            <img src={getOptimizedUrl('v1/jue_site/join_now_img.jpeg')} alt="Join Now" style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px' }} />
+          </div>
+          <a href="https://chat.whatsapp.com/your-group-link" target="_blank" rel="noopener noreferrer" className="alumni-btn blink-btn" style={{ marginBottom: '15px', display: 'inline-block', textDecoration: 'none', fontSize: '1.25rem' }}>
             Click to connect now
           </a>
         </div>

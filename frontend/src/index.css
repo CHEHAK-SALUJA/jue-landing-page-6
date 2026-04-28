@@ -1720,10 +1720,7 @@ h3 {
   box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
 }
 
-.explore-campus-btn.blink-btn {
-  animation: buttonBlinkWhite 1.5s infinite alternate;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-}
+
 
 @keyframes buttonBlink {
   0% {
@@ -3326,8 +3323,8 @@ h3 {
 
 .explore-campus-btn {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #3498db;
+  color: #3498db;
   padding: 12px 30px;
   border-radius: 40px;
   font-family: 'Inter', sans-serif !important;
@@ -3340,8 +3337,8 @@ h3 {
 }
 
 .explore-campus-btn:hover {
-  background: white;
-  color: #003B6F;
+  background: #3498db;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
