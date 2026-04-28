@@ -238,17 +238,16 @@ const App = () => {
         </div>
         <nav className="sidebar-links">
           <a href="#home"              onClick={() => setIsMenuOpen(false)}>HOME</a>
-          <a href="#programs"          onClick={() => setIsMenuOpen(false)}>STUDY &amp; PROGRAMS</a>
-          <a href="#why-jue"           onClick={() => setIsMenuOpen(false)}>WHY Japan University of Economics</a>
-          <a href="#why-japan-choice"  onClick={() => setIsMenuOpen(false)}>WHY JAPAN IS THE RIGHT CHOICE FOR INDIAN STUDENTS</a>
-          <a href="#explore-japan"     onClick={() => setIsMenuOpen(false)} className="sidebar-huh"><span className="huh-blue">HUH?</span> Do you know about this in Japan</a>
-          <a href="#comparison"        onClick={() => setIsMenuOpen(false)} className="sidebar-smarter">JUE JAPAN: <span className="smarter-blue">THE SMARTER CHOICE</span></a>
-          <a href="#campus-life-section" onClick={() => setIsMenuOpen(false)}>CAMPUS LIFE &amp; EXPERIENCE</a>
-          <a href="#journey"           onClick={() => setIsMenuOpen(false)}>FROM INDIA TO JAPAN – Your "flight is ready"</a>
-          <a href="#special-support2"  onClick={() => setIsMenuOpen(false)}>SPECIAL SUPPORT FOR INDIAN STUDENTS – WE'VE GOT YOU</a>
-          <a href="#parents-peace"     onClick={() => setIsMenuOpen(false)}>FOR FAMILIES &amp; PARENTS – We understand you</a>
-          <a href="#concerns"          onClick={() => setIsMenuOpen(false)}>YOUR CONCERNS – SOLVED</a>
-          <a href="#success"           onClick={() => setIsMenuOpen(false)}>INDIAN STUDENT SUCCESS STORIES</a>
+          <a href="#programs"          onClick={() => setIsMenuOpen(false)}>PROGRAMS</a>
+          <a href="#why-jue"           onClick={() => setIsMenuOpen(false)}>WHY JUE?</a>
+          <a href="#why-japan-choice"  onClick={() => setIsMenuOpen(false)}>WHY JAPAN?</a>
+          <a href="#explore-japan"     onClick={() => setIsMenuOpen(false)}>ABOUT JAPAN</a>
+          <a href="#comparison"        onClick={() => setIsMenuOpen(false)}>THE SMARTER CHOICE</a>
+          <a href="#campus-life-section" onClick={() => setIsMenuOpen(false)}>CAMPUS LIFE</a>
+          <a href="#journey"           onClick={() => setIsMenuOpen(false)}>YOUR JOURNEY</a>
+          <a href="#special-support2"  onClick={() => setIsMenuOpen(false)}>SPECIAL SUPPORT</a>
+          <a href="#parents-peace"     onClick={() => setIsMenuOpen(false)}>FOR PARENTS</a>
+          <a href="#success"           onClick={() => setIsMenuOpen(false)}>SUCCESS STORIES</a>
           <a href="#faq"               onClick={() => setIsMenuOpen(false)}>FAQs</a>
         </nav>
         <div className="sidebar-footer">
