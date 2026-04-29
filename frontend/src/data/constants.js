@@ -72,6 +72,16 @@ export const featureSlides = [
 
 // ─── Japan Choice Carousel ────────────────────────────────────────────────────
 export const japanChoiceImages = [
+    {
+    title: 'DISCIPLINE THAT SHOCKS THE WORLD',
+    desc: 'In Japan, trains are so punctual that even a delay of a few seconds leads to official apologies. In one case, a train company apologized for just a 35-second delay showing how seriously they value time and responsibility.',
+    img: getOptimizedUrl('jue_site/explore_japan_1'),
+  },
+  {
+    title: 'RESPECT FOR EVERY SMALL THING',
+    desc: 'Even something like a drain cover (manhole) is beautifully designed with art and local culture. This reflects a deep mindset. Every work matters and Every role deserves respect. This is something very inspiring for Indian students where dignity of work is truly practiced.',
+    img: getOptimizedUrl('jue_site/explore_japan_2'),
+  },
   {
     title: 'SAFETY & LOW CRIME RATE',
     desc: "One of the safest countries in the world. Japan consistently ranks among the safest nations globally, with extremely low crime rates. Even women can walk alone late at night with a strong sense of security.",
@@ -107,39 +117,39 @@ export const japanChoiceImages = [
 // ─── Explore Japan Carousel ───────────────────────────────────────────────────
 export const exploreJapanImages = [
   {
-    title: 'DISCIPLINE THAT SHOCKS THE WORLD',
-    desc: 'In Japan, trains are so punctual that even a delay of a few seconds leads to official apologies. In one case, a train company apologized for just a 35-second delay showing how seriously they value time and responsibility.',
-    img: getOptimizedUrl('jue_site/explore_japan_1'),
+    title: 'CHERRY BLOSSOM SEASON',
+    desc: 'Every spring, thousands of students and visitors gather across Japan to witness the breathtaking cherry blossom season. Parks, campuses, and streets come alive as people celebrate together under pink skies. It’s a time when friendships begin, memories are created, and Japan feels truly magical. Imagine starting your student life in the middle of this unforgettable experience.',
+    img: getOptimizedUrl('jue_site/explore1_new'),
   },
   {
-    title: 'RESPECT FOR EVERY SMALL THING',
-    desc: 'Even something like a drain cover (manhole) is beautifully designed with art and local culture. This reflects a deep mindset. Every work matters and Every role deserves respect. This is something very inspiring for Indian students where dignity of work is truly practiced.',
-    img: getOptimizedUrl('jue_site/explore_japan_2'),
+    title: 'HIGH-SPEED SHINKANSEN',
+    desc: 'Experience seamless travel across Japan on the high-speed Shinkansen, where cities are connected in just a few hours. With unmatched punctuality and comfort, students can easily travel for classes, internships, or weekend exploration. In Japan, moving between opportunities is as smooth as the journey itself. It’s not just transportation — it’s a lifestyle that keeps you connected to every opportunity.',
+    img: getOptimizedUrl('jue_site/explore2_new'),
   },
   {
-    title: 'TRADITIONAL TEA CEREMONY',
-    desc: "The Japanese Tea Ceremony is not just about drinking tea; it's about respect, peace, and mindfulness. Every movement is graceful, teaching patience and inner calm.",
-    img: getOptimizedUrl('jue_site/explore_japan_3'),
+    title: '24/7 CONVENIENCE STORES',
+    desc: 'Experience a level of convenience unique to Japan, where stores like 7‑Eleven Japan offer much more than groceries. Fresh food, ready-to-eat meals, and essential services are available anytime, day or night. It’s everyday living made effortless.',
+    img: getOptimizedUrl('jue_site/explore3_new'),
   },
   {
-    title: 'UNIQUE SWEETS & FOOD CULTURE',
-    desc: 'Japan is famous for desserts like Mochi soft rice cakes often filled with sweet red bean paste. Even sweets reflect tradition, season, and simplicity.',
-    img: getOptimizedUrl('jue_site/explore_japan_4'),
+    title: 'DELICIOUS & AFFORDABLE FOOD',
+    desc: 'Delicious and affordable food is a part of everyday life in Japan — from fresh sushi to comforting bowls of ramen and local favorites like sushi rolls. Students can enjoy high-quality meals without spending too much, whether at small eateries or convenience stores. *In Japan, great taste and affordability go hand in hand.*',
+    img: getOptimizedUrl('jue_site/explore4_new'),
   },
   {
-    title: 'MOUNT FUJI – A SYMBOL OF LUCK',
-    desc: 'Mount Fuji is considered sacred and lucky. There is a belief: If you see Mount Fuji clearly on your journey (especially while returning), it means Japan is calling you back again.',
-    img: getOptimizedUrl('jue_site/explore_japan_5'),
+    title: 'BEAUTY OF HOKKAIDO',
+    desc: 'Discover the beauty of Hokkaido, Japan’s northern paradise known for its stunning landscapes and peaceful lifestyle. Experience breathtaking landscapes, where nature stretches as far as the eye can see. From snowy winters to fresh local cuisine, it offers a completely unique side of Japan.',
+    img: getOptimizedUrl('jue_site/explore5_new'),
   },
   {
-    title: 'CHOCOLATE GIFTING CULTURE',
-    desc: 'Giving chocolates is a big tradition—especially on Valentine\'s Day and exam times. Students give chocolates as motivation and encouragement—showing care in a simple but meaningful way.',
-    img: getOptimizedUrl('jue_site/explore_japan_6'),
+    title: 'TOKYO DISNEYLAND',
+    desc: 'Step into a world of wonder at Tokyo Disneyland, one of Japan’s most iconic attractions. From thrilling rides to magical parades, it’s a place where students can relax, explore, and create unforgettable memories. Because in Japan, even your weekends feel like a dream.',
+    img: getOptimizedUrl('jue_site/explore6_new'),
   },
   {
-    title: 'SHRINES & SPIRITUAL LIFE',
-    desc: 'Japanese Shinto Shrines are found everywhere; people visit them to pray, make wishes, and find peace. Even busy people take time to connect spiritually.',
-    img: getOptimizedUrl('jue_site/explore_japan_7'),
+    title: 'ANIME & POP CULTURE',
+    desc: 'Japan is the heart of global anime culture, where stories come to life beyond the screen. From themed cafés to districts like Akihabara, students can fully immerse themselves in this vibrant world. Cosplay events and communities let you express creativity, meet like-minded people, and be part of something unique. In Japan, your passions don’t just stay hobbies — they become experiences.',
+    img: getOptimizedUrl('jue_site/explore7_new'),
   },
 ];
 
