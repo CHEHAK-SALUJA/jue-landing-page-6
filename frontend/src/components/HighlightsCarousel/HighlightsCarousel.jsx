@@ -2,20 +2,20 @@ import { useRef, useEffect, useState } from 'react';
 import { getOptimizedUrl } from '../../utils/cloudinary';
 import './HighlightsCarousel.css';
 
-const highlight1 = getOptimizedUrl("jue_site/highlight_1");
-const highlight2 = getOptimizedUrl("jue_site/highlight_2");
-const highlight3 = getOptimizedUrl("jue_site/highlight_3");
-const highlight4 = getOptimizedUrl("jue_site/highlight_4");
-const highlight5 = getOptimizedUrl("jue_site/highlight_5");
-const highlight6 = getOptimizedUrl("jue_site/highlight_6");
+const highlight1 = getOptimizedUrl("jue_site/h1_new");
+const highlight2 = getOptimizedUrl("jue_site/h2_new");
+const highlight3 = getOptimizedUrl("jue_site/h3_new");
+const highlight4 = getOptimizedUrl("jue_site/h4_new");
+const highlight5 = getOptimizedUrl("jue_site/h5_new");
+const highlight6 = getOptimizedUrl("jue_site/h6_new");
 
 const defaultHighlights = [
-  { img: highlight1, date: '2026.04.10', text: 'Innovative Robotics Lab: Leading the Future of Japanese Engineering.' },
-  { img: highlight2, date: '2026.04.10', text: 'Vibrant Campus Life: Discovering the Hearts and Minds of Global Students.' },
-  { img: highlight3, date: '2026.04.10', text: 'Prime Minister\'s Commendation for Distinguished Service in Greenery Promotion.' },
-  { img: highlight4, date: '2026.04.10', text: 'Academic Excellence: Students collaborating in our modern, bright library space.' },
-  { img: highlight5, date: '2026.04.10', text: 'Cultural Inclusion: International food festival celebrating our diverse student body.' },
-  { img: highlight6, date: '2026.04.10', text: 'Career Success: Students connecting with top global recruiters at our annual fair.' },
+  { img: highlight1, date: '', text: 'Cherry blossom photo spot 🌸 photo spot with cherry blossoms as a backdrop will be set up. The photographer was Mr. Akiyama, a dancer from the Kyushu Danji Shinsengumi group who has reached the semi-finals of the popular American show "America\'s Got Talent," and also a faculty member in our university\'s Department of Creative Arts and Production! Many people participated, and he captured a memorable photo for everyone 🌸' },
+  { img: highlight2, date: '', text: 'In addition to offering a free lunch experience at the student cafeteria, there was also a raffle where participants could win sweets! It was impressive to see everyone having so much fun trying their luck at the raffle.' },
+  { img: highlight3, date: '', text: 'We recently held a series of Freshman Seminars, organized by department, for our new students. In preparation for the specialized studies that lie ahead, students learned about effective approaches to university-level coursework and the importance of taking an active, self-directed role in their education. The group work sessions provided a valuable opportunity for students to exchange ideas, deepen their interactions, and gain exposure to a diverse range of perspectives.' },
+  { img: highlight4, date: '', text: 'Creating book displays. We create promotional displays for new and recommended books to make them easily noticeable to users. We write catchy slogans and descriptions, and design them carefully, with the goal of making people think, "That looks interesting!" and "I want to read that!" When the finished pop-up displays are lined up, the library becomes an even more fun and lively space! ✨' },
+  { img: highlight5, date: '', text: 'The event kicked off with a welcome performance by our university\'s student public relations project team, "Blue Rose"! In addition, the following programs were held in the large lecture hall. University Introduction / Facility Introduction.' },
+  { img: highlight6, date: '', text: 'Open campus for women on Sunday, March 22nd. We held a special workshop titled "Learn from a Former ANA Flight Attendant! Make a Difference in Interviews! Communication Skills and Manners," led by Professor Mihoko Hirose of the Global Business Department.' },
 ];
 
 export default function HighlightsCarousel({ title = 'Highlights', items = defaultHighlights }) {
